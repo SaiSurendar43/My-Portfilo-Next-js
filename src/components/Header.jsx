@@ -32,7 +32,7 @@ function Header() {
     };
 
     return (
-        <div data-aos="fade-down" className="fixed top-0 left-0 w-full z-50">
+        <div data-aos="fade-down" className="fixed top-0 left-0  w-full z-50">
             <div
                 className={`flex flex-col items-center justify-center w-full p-3 z-50 transition-all duration-300 ${isScrolled
                         ? "bg-black/40 text-white font-medium backdrop-blur-lg border-b border-white/20 shadow-lg py-5"
@@ -73,9 +73,9 @@ function Header() {
                 </div>
             </div>
             {isMenuOpen && (
-                <div className="w-full h-full fixed bg-black/90 backdrop-blur-2xl -z-50 animate-closeDown pt-4">
+                <div className="w-full h-screen fixed bg-black/90 backdrop-blur-2xl -z-50 animate-closeDown pt-4">
                     <div
-                        className="flex flex-col justify-between h-[80vh] overflow-scroll w-11/12 mx-auto"
+                        className="flex flex-col justify-between h-[100vh] overflow-scroll w-11/12 mx-auto"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         <div>
@@ -84,11 +84,11 @@ function Header() {
                                     <div
                                         onClick={() => handleLinkClick(link.link.substring(1))}
                                         className={`text-center font-semibold hover:bg-white hover:text-custom-color-secondary hover:font-medium rounded-2xl px-4 py-2 ${activeSection === link.link.substring(1)
-                                                ? "bg-white text-custom-color-secondary"
+                                                ? "bg-white text-xl font-semibold text-custom-color-secondary"
                                                 : ""
                                             }`}
                                     >
-                                        <p className="text-base">{link.title}</p>
+                                        <p className="text-xl">{link.title}</p>
                                     </div>
                                 </Link>
                             ))}
