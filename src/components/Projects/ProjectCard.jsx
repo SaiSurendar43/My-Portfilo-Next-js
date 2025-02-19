@@ -1,6 +1,7 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { Code, Server, Database, Cloud, Layers } from "lucide-react";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologyStack }) => {
   return (
@@ -9,7 +10,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
         className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
       >
         <div
-          className="absolute inset-0 transition-transform duration-700 group-hover:scale-125"
+          className="absolute shadow-lg inset-0 transition-transform duration-700 group-hover:scale-125"
           style={{
             background: `url(${imgUrl})`,
             backgroundSize: "cover",
@@ -44,21 +45,49 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
 
 
       {/* Project Description */}
-      <div className="text-white border-0 border-white-transparent rounded-b-xl hover:bg-custom-text   mt-0 bg-[rgba(255,255,255,0.8)] py-6 px-4">
-        {/* <h5 className="text-left text-xl font-medium font-poppins text-black mt-0 mb-8 md:mb-2">
-          {title}
-        </h5> */}
-        <p className="text-left text-base font-semibold underline underline-offset-4 font-poppins text-black mt-0 mb-8 md:mb-2">{description}</p>
+      <div className="group text-white border-0 border-white-transparent rounded-b-xl hover:bg-custom-text hover:text-white shadow-lg mt-0 bg-[#F5F5F5] py-6 px-4 transition-colors duration-300">
+        <p className="text-left text-base font-semibold underline underline-offset-4 font-poppins text-black mt-0 mb-8 md:mb-2 group-hover:text-white">
+          {description}
+        </p>
+
         {technologyStack && (
-          <div className="text-left  font-poppins mt-0 mb-8 md:mb-2">
-            <p className="font-medium text-black text-base">Frontend: <span className="text-[#161616] text-sm font-medium">{technologyStack.frontend}</span></p>
-            {technologyStack.backend && <p className="font-medium text-black text-base">Backend:<span className="text-[#161616] text-sm font-medium">{technologyStack.backend}</span> </p>}
-            {technologyStack.database && <p className="font-medium text-black text-base">Database: <span className="text-[#161616] text-sm font-medium">{technologyStack.database}</span></p>}
-            {technologyStack.Api && <p className="font-medium text-black text-base">API: <span className="text-[#161616] text-sm font-medium">{technologyStack.Api}</span></p>}
-            {technologyStack.other && <p className="font-medium text-black text-base">Other: <span className="text-[#161616] text-sm font-medium">{technologyStack.other}</span> </p>}
+          <div className="text-left font-poppins mt-0 mb-8 md:mb-2 space-y-2">
+            <p className="font-medium text-black text-base flex items-center gap-2 group-hover:text-white">
+              <Code className="w-5 h-5 fill-[#161616] group-hover:fill-[#FFFFFFCC]" />
+              Frontend: <span className="text-[#161616] text-sm font-medium group-hover:text-[#F5F5F5]">{technologyStack.frontend}</span>
+            </p>
+
+            {technologyStack.backend && (
+              <p className="font-medium text-black text-base flex items-center gap-2 group-hover:text-white">
+                <Server className="w-5 h-5 fill-[#161616] group-hover:fill-[#FFFFFFCC]" />
+                Backend: <span className="text-[#161616] text-sm font-medium group-hover:text-[#F5F5F5]">{technologyStack.backend}</span>
+              </p>
+            )}
+
+            {technologyStack.database && (
+              <p className="font-medium text-black text-base flex items-center gap-2 group-hover:text-white">
+                <Database className="w-5 h-5 fill-[#161616] group-hover:fill-[#FFFFFFCC]" />
+                Database: <span className="text-[#161616] text-sm font-medium group-hover:text-[#F5F5F5]">{technologyStack.database}</span>
+              </p>
+            )}
+
+            {technologyStack.Api && (
+              <p className="font-medium text-black text-base flex items-center gap-2 group-hover:text-white">
+                <Cloud className="w-5 h-5 fill-[#161616] group-hover:fill-[#FFFFFFCC]" />
+                API: <span className="text-[#161616] text-sm font-medium group-hover:text-[#F5F5F5]">{technologyStack.Api}</span>
+              </p>
+            )}
+
+            {technologyStack.other && (
+              <p className="font-medium text-black text-base flex items-center gap-2 group-hover:text-white">
+                <Layers className="w-5 h-5 fill-[#161616] group-hover:fill-[#FFFFFFCC]" />
+                Other: <span className="text-[#161616] text-sm font-medium group-hover:text-[#F5F5F5]">{technologyStack.other}</span>
+              </p>
+            )}
           </div>
         )}
       </div>
+
     </div>
 
   );

@@ -5,6 +5,7 @@ import AboutSection from "@/components/About/About";
 import ProjectsSection from "@/components/Projects/ProjectSection";
 import EmailSection from "@/components/Email/EmailSection";
 import Footer from "@/components/Footer/Footer";
+import Testimonials from "@/components/Testimonal/Testimonal";
 
 
 const geistSans = localFont({
@@ -35,6 +36,7 @@ export default function Home() {
     </video> */}
       <HeroSection/>
       <AboutSection/>
+      <Testimonials/>
       <ProjectsSection />
       <EmailSection/>
       <Footer/>

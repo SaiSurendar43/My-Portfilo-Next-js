@@ -17,7 +17,7 @@ const AboutSection = () => {
             <div className="lg:w-5/12 text-white space-y-6 mb-8 lg:mb-0">
               <div data-aos="fade-up">
                 <div>
-                  <h4 className="text-transparent bg-custom-text bg-clip-text font-poppins text-lg font-bold uppercase">
+                  <h4 className="text-transparent bg-[#212529] bg-clip-text font-poppins lg:text-2xl text-xl font-bold uppercase">
                     About Me
                   </h4>
                 </div>
