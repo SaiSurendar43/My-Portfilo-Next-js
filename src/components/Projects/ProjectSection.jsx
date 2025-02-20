@@ -111,7 +111,7 @@ const ProjectsSection = () => {
   };
 
   return (
-     <section id="project" className="bg-white -scroll-mt-20">
+     <section id="project" className="bg-white scroll-mt-20">
     
       {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440  290">
         <path

@@ -35,8 +35,8 @@ export default function Testimonials() {
 
     return (
         <section
-            id="testimonal"
-            className="bg-custom-gradient -scroll-mt-20 flex flex-col items-center"
+            id="testimonials"
+            className="bg-custom-gradient scroll-mt-4 lg:-scroll-mt-36 flex flex-col items-center"
         >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
                 <path

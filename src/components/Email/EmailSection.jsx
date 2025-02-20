@@ -42,7 +42,7 @@ const EmailSection = () => {
     };
 
     return (
-        <section className="bg-custom-gradient -scroll-mt-20 flex flex-col items-center">
+        <section id="contact" className="bg-custom-gradient scroll-mt-5 lg:-scroll-mt-52 flex flex-col items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
                 <path
                     fill="#fff"
