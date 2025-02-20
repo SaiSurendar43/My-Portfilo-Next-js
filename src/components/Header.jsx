@@ -68,7 +68,7 @@ function Header() {
                                     {/* Animated Underline */}
                                     <span
                                         className={`absolute left-1/2 bottom-0 h-[2px] bg-fuchsia-600 transition-all duration-300 ${activeSection === link.link.substring(1)
-                                                ? "w-full -left-2" // Active link underline
+                                                ? "w-full -left-3" // Active link underline
                                                 : "w-0 group-hover:w-full group-hover:left-0"
                                             }`}
                                     ></span>
