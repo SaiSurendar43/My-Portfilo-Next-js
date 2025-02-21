@@ -38,7 +38,7 @@ const TypewriterEffect = () => {
 
   return (
     <span
-      className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-teal-400 to-blue-500"
+      className="text-transparent font-poppins bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white"
       style={{ display: "inline-block", minHeight: "1.2em" }}
     >
       {text}
@@ -67,16 +67,16 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-12 items-center">
           <div data-aos="fade-right" className="col-span-1 sm:col-span-7">
             <h1
-              className="text-white mb-4 text-3xl text-center lg:text-left sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold"
+              className="text-white mb-4 text-3xl font-poppins text-center lg:text-left sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold"
               style={{ minHeight: "3.5em" }} // Adjust the height as needed
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-teal-400 to-blue-500">
+              <span className="text-transparent  bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white">
                 Hello, I&apos;m
               </span>
               <br />
               <TypewriterEffect />
             </h1>
-            <p className="text-white text-base font-medium text-center lg:text-left sm:text-lg mb-6 lg:text-xl">
+            <p className="text-[#F5F5F5] text-base font-medium text-center lg:text-left sm:text-lg mb-6 lg:text-xl">
               Hi, I&apos;m Surendar. I am currently working as a Frontend Developer, <br />
               and actively focusing on becoming a Full Stack Developer.
             </p>

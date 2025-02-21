@@ -64,7 +64,7 @@ function Header() {
                                             : "text-custom-text"
                                         }`}
                                 >
-                                    <p className="text-base">{link.title}</p>
+                                    <p className="lg:text-lg text-base">{link.title}</p>
                                     {/* Animated Underline */}
                                     <span
                                         className={`absolute left-1/2 bottom-0 h-[2px] bg-fuchsia-600 transition-all duration-300 ${activeSection === link.link.substring(1)

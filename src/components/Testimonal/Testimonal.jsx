@@ -49,7 +49,7 @@ export default function Testimonials() {
             {/* Center the heading */}
             <h2
                 data-aos="fade-up"
-                className="text-center text-4xl lg:text-5xl font-bold font-poppins text-[#fff] mt-0 mb-8 md:mb-2"
+                className="text-center text-4xl lg:text-6xl lg:mb-9 font-bold font-poppins text-[#fff] mt-0 mb-8 md:mb-2"
             >
                 Testimonials
             </h2>

@@ -72,7 +72,7 @@ const EmailSection = () => {
 
                     <form className="flex flex-col" ref={formRef} onSubmit={handleSubmit}>
                         <div className="mb-6">
-                            <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
+                            <label htmlFor="email" className="text-white block mb-2 lg:text-lg text-sm font-medium">
                                 Your email
                             </label>
                             <input
@@ -80,12 +80,12 @@ const EmailSection = () => {
                                 type="email"
                                 id="email"
                                 required
-                                className="bg-[#FFFFFFCC] border border-gray-300 text-gray-800 text-sm rounded-lg block w-full p-2.5 shadow-md focus:outline-none"
+                                className="bg-[#FFFFFFCC] border border-gray-300 text-black text-base rounded-lg block w-full p-2.5 shadow-md focus:outline-none"
                                 placeholder="jacob@google.com"
                             />
                         </div>
                         <div className="mb-6">
-                            <label htmlFor="subject" className="text-white block mb-2 text-sm font-medium">
+                            <label htmlFor="subject" className="text-white block mb-2 lg:text-lg text-sm font-medium">
                                 Subject
                             </label>
                             <input
@@ -93,25 +93,25 @@ const EmailSection = () => {
                                 type="text"
                                 id="subject"
                                 required
-                                className="bg-[#FFFFFFCC] border border-gray-300 text-gray-800 text-sm rounded-lg block w-full p-2.5 shadow-md focus:outline-none"
+                                className="bg-[#FFFFFFCC] border border-gray-300 text-black text-base rounded-lg block w-full p-2.5 shadow-md focus:outline-none"
                                 placeholder="Just saying hi"
                             />
                         </div>
                         <div className="mb-6">
-                            <label htmlFor="message" className="text-white block mb-2 text-sm font-medium">
+                            <label htmlFor="message" className="text-white block mb-2 lg:text-lg text-sm font-medium">
                                 Message
                             </label>
                             <textarea
                                 name="message"
                                 id="message"
                                 required
-                                className="bg-[#FFFFFFCC] border border-gray-300 text-gray-800 text-sm rounded-lg block w-full p-2.5 shadow-md focus:outline-none"
+                                className="bg-[#FFFFFFCC] border border-gray-300 text-black text-base rounded-lg block w-full p-2.5 shadow-md focus:outline-none"
                                 placeholder="Let's talk about..."
                             />
                         </div>
                         <button
                             type="submit"
-                            className="bg-[#FFFFFFCC] text-black hover:bg-white rounded-full font-medium py-2.5 px-5 w-full flex items-center justify-center"
+                            className="bg-[#FFFFFFCC] text-black hover:bg-white rounded-full font-poppins font-semibold py-2.5 px-5 w-full flex items-center justify-center"
                             disabled={loading}
                         >
                             {loading ? (

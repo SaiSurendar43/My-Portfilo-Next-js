@@ -11,21 +11,24 @@ import {
 const AboutSection = () => {
   return (
     <div className="">
-      <section id="about" className="py-16 pb-0 lg:pt-0 relative bg-white scroll-mt-32">
+      <section id="about" className="py-16 pb-0 lg:pt-10 relative bg-white scroll-mt-32">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="lg:w-5/12 text-white space-y-6 mb-8 lg:mb-0">
               <div data-aos="fade-up">
                 <div>
-                  <h4 className="text-transparent bg-[#212529] bg-clip-text font-poppins lg:text-2xl text-xl font-bold uppercase">
+                  <h4 className="text-transparent bg-[#212529] bg-clip-text font-poppins lg:text-2xl text-xl font-bold">
                     About Me
                   </h4>
                 </div>
                 <p className="text-[#333] font-poppins font-medium lg:text-base text-sm">
-                  I am a full-stack web developer with a passion for creating interactive and responsive web applications.
-                  I have experience working with JavaScript, React,Next.js,Redux, Node.js, Express,sql,Mongodb,HTML,CSS,and Git.
-                  I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and
-                  I am excited to work with others to create amazing applications.
+                  I am a Frontend Developer with 3 years of experience and a passion for creating interactive and responsive web applications.
+
+                  Currently, I am focusing on becoming a Full-Stack and MERN Developer.
+
+                  I have expertise in JavaScript, React, Next.js, Redux, Node.js, Express, SQL, MongoDB, HTML, CSS, and Git.
+
+                  As a quick learner, I am always eager to expand my knowledge and skill set. I thrive in team environments and look forward to collaborating with others to build amazing applications.
                 </p>
               </div>
 

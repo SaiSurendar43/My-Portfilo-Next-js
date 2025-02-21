@@ -91,6 +91,21 @@ const projectsData = [
       Api: "Rest api"
     },
   },
+  {
+    id: 7,
+    title: "IJanTech Admin",
+    description: "Project Details",
+    image: "/ijan.jpg",
+    tag: ["All", "Web","Mobile"],
+    gitUrl: "/",
+    previewUrl: "https://ijan-frontend.vercel.app/amc/1",
+    technologyStack: {
+      frontend: "Next js,Tailwind CSS",
+      backend: "Node.js",
+      database: "MongoDB",
+      Api: "GraphQL"
+    },
+  },
 ];
 
 const ProjectsSection = () => {
@@ -121,7 +136,7 @@ const ProjectsSection = () => {
         </path>
 
       </svg> */}
-      <h2 data-aos="fade-up" className="text-center text-4xl lg:text-5xl font-bold font-poppins text-[#212529] mt-0 mb-8 md:mb-2">
+      <h2 data-aos="fade-up" className="text-center text-4xl lg:text-6xl font-bold font-poppins text-[#212529] mt-0 mb-8 md:mb-2">
         Latest work
       </h2>
       <div data-aos="fade-up" className="flex flex-row justify-center items-center gap-2 py-6">

@@ -10,11 +10,14 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
         className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
       >
         <div
-          className="absolute shadow-lg inset-0 transition-transform duration-700 group-hover:scale-125"
+          className="absolute inset-0 transition-transform duration-700 group-hover:scale-125 shadow-2xl"
           style={{
             background: `url(${imgUrl})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            borderTop: "5px solid #d946ef", // Fuchsia-600 color
+            // borderTopLeftRadius: "1rem",
+            // borderTopRightRadius: "1rem",
           }}
         ></div>
         {/* Overlay for hover */}
