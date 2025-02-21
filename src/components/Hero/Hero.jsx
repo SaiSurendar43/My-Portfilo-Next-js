@@ -38,7 +38,7 @@ const TypewriterEffect = () => {
 
   return (
     <span
-      className="text-transparent font-poppins bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white"
+      className="text-transparent font-poppins bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
       style={{ display: "inline-block", minHeight: "1.2em" }}
     >
       {text}
@@ -67,10 +67,10 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-12 items-center">
           <div data-aos="fade-right" className="col-span-1 sm:col-span-7">
             <h1
-              className="text-white mb-4 text-3xl font-poppins text-center lg:text-left sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold"
+              className="text-white mb-4 text-4xl font-poppins text-center lg:text-left sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold"
               style={{ minHeight: "3.5em" }} // Adjust the height as needed
             >
-              <span className="text-transparent  bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-300">
                 Hello, I&apos;m
               </span>
               <br />
