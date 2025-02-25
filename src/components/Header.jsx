@@ -81,7 +81,7 @@ function Header() {
                     <div className="hidden md:flex items-center gap-2 hover:bg-custom-text bg-white text-black px-4 py-2 rounded-md font-semibold">
                         <IoCallOutline size={20} className="text-black hover:text-blue-600" />
                         <a href="tel:+911234567890" className="hover:underline">
-                            +91 12345 67890
+                            +91 8524854218
                         </a>
                     </div>
 
