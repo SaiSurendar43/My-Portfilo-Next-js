@@ -38,8 +38,8 @@ function Header() {
         <div data-aos="fade-down" className="fixed top-0 left-0 w-full z-50">
             <div
                 className={`flex flex-col items-center justify-center w-full p-3 z-50 transition-all duration-300 ${isScrolled
-                        ? "bg-black/40 text-white font-medium backdrop-blur-lg border-b border-white/20 shadow-lg py-5"
-                        : "bg-transparent font-medium border-transparent"
+                    ? "bg-black/40 text-white font-medium backdrop-blur-lg border-b border-white/20 shadow-lg py-5"
+                    : "bg-transparent font-medium border-transparent"
                     }`}
             >
                 <div className="flex flex-row items-center justify-between w-full max-w-screen-2xl mx-auto px-4">
@@ -60,16 +60,16 @@ function Header() {
                                 <div
                                     onClick={() => handleLinkClick(link.link.substring(1))}
                                     className={`text-center font-semibold relative group px-4 py-2 transition-all duration-300 ${activeSection === link.link.substring(1)
-                                            ? "text-custom-text" // Active link color and font weight
-                                            : "text-custom-text"
+                                        ? "text-custom-text" // Active link color and font weight
+                                        : "text-custom-text"
                                         }`}
                                 >
                                     <p className="lg:text-lg text-base">{link.title}</p>
                                     {/* Animated Underline */}
                                     <span
                                         className={`absolute left-1/2 bottom-0 h-[2px] bg-fuchsia-600 transition-all duration-300 ${activeSection === link.link.substring(1)
-                                                ? "w-full -left-3" // Active link underline
-                                                : "w-0 group-hover:w-full group-hover:left-0"
+                                            ? "w-full -left-3" // Active link underline
+                                            : "w-0 group-hover:w-full group-hover:left-0"
                                             }`}
                                     ></span>
                                 </div>
@@ -108,26 +108,26 @@ function Header() {
                                     <div
                                         onClick={() => handleLinkClick(link.link.substring(1))}
                                         className={`text-center font-semibold relative px-4 py-2 transition-colors duration-300 rounded-md ${activeSection === link.link.substring(1)
-                                               ? "bg-white text-black"
-                                                : "text-white"
+                                            ? "bg-white text-black"
+                                            : "text-white"
                                             }`}
                                     >
                                         <p className="text-xl">{link.title}</p>
                                     </div>
                                 </Link>
                             ))}
-                              <div className="flex flex-col items-center mt-6">
-                            <div className="flex items-center bg-fuchsia-700/60 px-4 py-2 rounded-lg justify-center gap-2 text-white font-semibold">
-                                <IoCallOutline size={20} />
-                                <a href="tel:+911234567890" className="hover:underline">
-                                    +91 12345 67890
-                                </a>
+                            <div className="flex flex-col items-center mt-6">
+                                <div className="flex items-center bg-fuchsia-700/60 px-4 py-2 rounded-lg justify-center gap-2 text-white font-semibold">
+                                    <IoCallOutline size={20} />
+                                    <a href="tel:+911234567890" className="hover:underline">
+                                        +91 8524854218
+                                    </a>
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                         {/* Contact Number in Mobile Menu */}
-                      
+
                     </div>
                 </div>
             )}
